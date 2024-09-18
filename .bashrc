@@ -57,3 +57,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH=/usr/local/cuda-12.3/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-12.3/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
+# Add GSEA to PATH
+export PATH=$PATH:/home/acpicornell/bin/GSEA
