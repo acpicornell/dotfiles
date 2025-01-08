@@ -35,5 +35,18 @@ genomes:
             asset_parents: []
             asset_path: fasta
             asset_digest: 4afce2deeceae65b4c0987b9297cf441
+            asset_children: 
+             - 0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1/star_index:default
+        default_tag: default
+      star_index:
+        tags:
+          default:
+            seek_keys:
+              star_index: .
+              dir: .
+            asset_parents: 
+             - 0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1/fasta:default
+            asset_path: star_index
+            asset_digest: 295b143e0933be5b9ab09f00f92496a4
         default_tag: default
     genome_description: The GCA_000001635.5 seqs_for_alignment_pipelines from NCBI

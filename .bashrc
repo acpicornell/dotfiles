@@ -63,6 +63,9 @@ export PATH=$PATH:/home/acpicornell/bin/GSEA
 # Add refgenie PATH
 export REFGENIE="$HOME/.refgenie.yaml"
 
+# Add cellranger PATH
+export PATH=$PATH:"/mnt/storage/acpicornell/bin/cellranger-9.0.0"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/mnt/storage/acpicornell/bin/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
