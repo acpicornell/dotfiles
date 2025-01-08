@@ -2,4 +2,38 @@ config_version: 0.4
 genome_folder: /mnt/storage/data/refgenie
 genome_servers: 
  - http://refgenomes.databio.org
-genomes: null
+genomes:
+  2230c535660fb4774114bfa966a62f823fdb6d21acf138d4:
+    aliases: 
+     - hg38
+    assets:
+      fasta:
+        tags:
+          default:
+            seek_keys:
+              fasta: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa
+              fai: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.fa.fai
+              chrom_sizes: 2230c535660fb4774114bfa966a62f823fdb6d21acf138d4.chrom.sizes
+              dir: .
+            asset_parents: []
+            asset_path: fasta
+            asset_digest: 59fed5ec3c3a95bc5709b24b8f2cf7bf
+        default_tag: default
+    genome_description: The GCA_000001405.15 GRCh38_no_alt_analysis_set from NCBI
+  0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1:
+    aliases: 
+     - mm10
+    assets:
+      fasta:
+        tags:
+          default:
+            seek_keys:
+              fasta: 0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1.fa
+              fai: 0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1.fa.fai
+              chrom_sizes: 0f10d83b1050c08dd53189986f60970b92a315aa7a16a6f1.chrom.sizes
+              dir: .
+            asset_parents: []
+            asset_path: fasta
+            asset_digest: 4afce2deeceae65b4c0987b9297cf441
+        default_tag: default
+    genome_description: The GCA_000001635.5 seqs_for_alignment_pipelines from NCBI

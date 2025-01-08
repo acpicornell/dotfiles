@@ -61,7 +61,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.3/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 export PATH=$PATH:/home/acpicornell/bin/GSEA
 
 # Add refgenie PATH
-export PATH=$PATH:"$HOME/.refgenie.yaml"
+export REFGENIE="$HOME/.refgenie.yaml"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
