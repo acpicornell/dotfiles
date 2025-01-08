@@ -35,7 +35,7 @@ export SQUEUE_FORMAT="%.9i %.9P %.15j %.10u %.10f %.8T %.10M %.10l %.5C %.5D %.5
 # . /mnt/storage/acpicornell/bin/miniconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 
 # Mamba local install
-. /mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/conda.sh  # commented out by conda initialize
+# . /mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/conda.sh  # commented out by conda initialize  # commented out by conda initialize
 
 # Custom Mambaforge PATH
 export PATH=$PATH:/mnt/storage/acpicornell/bin/mambaforge/bin
@@ -59,3 +59,26 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.3/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 
 # Add GSEA to PATH
 export PATH=$PATH:/home/acpicornell/bin/GSEA
+
+# Add refgenie PATH
+export PATH=$PATH:"$HOME/.refgenie.yaml"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/mnt/storage/acpicornell/bin/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/mnt/storage/acpicornell/bin/mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/mnt/storage/acpicornell/bin/mambaforge/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+
