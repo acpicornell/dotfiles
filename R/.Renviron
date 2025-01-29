@@ -1,1 +1,2 @@
-R_LIBS_USER=/home/acpicornell/R/x86_64-redhat-linux-gnu-library/4.4
+R_LIBS_USER=/mnt/storage/acpicornell/R/x86_64-redhat-linux-gnu-library/4.4
+R_HOME: /mnt/storage/acpicornell/bin/mambaforge/lib/R
