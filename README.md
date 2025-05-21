@@ -6,30 +6,45 @@ This directory contains the dorfiles for my system.
 
 Ensure that you have the following installed on your system
 
-### Git
-
+### Install git
 ```shell
 dnf install git
 ``` 
 
-### Stow
-
+### Install stow
 ```shell
 dnf install stow
 ```
 
-## Installation
-
-First, check out the dotfiles repo in your $HOME directory using git
-
+## Clone from backup in GitHub (Optional)
 ```shell
 $ git clone git@github.com:acpicornell/dotfiles.git
 $ cd dotfiles
 ```
 
-then use GNU stow to create symlinks
-
+## Organize
 ```shell
-$ stow .
+~/dotfiles/
+├── bash/
+│   ├── .bashrc
+│   ├── .bash_profile
+├── vim/
+│   ├── .vimrc
+│   ├── .vim/
 ```
 
+## Use GNU stow to create symlinks
+```shell
+$ stow -v -t ~ bash  # Stow bash config
+$ stow -v -t ~ vim   # Stow vim config
+```
+
+## Track Dotfiles with Git
+```shell
+cd ~/dotfiles
+git init
+git remote add origin git@github.com:yourusername/dotfiles.git
+git add .
+git commit -m "Initial commit of dotfiles"
+git push -u origin main
+```
